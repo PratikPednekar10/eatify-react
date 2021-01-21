@@ -1,7 +1,11 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { Route } from "react-router-dom";
+import HomePage from "./components/pages/HomePage";
 
-const App = () => <div></div>
+
+const App = () =>
+    <div>
+        <Route path="/" exact Component={HomePage} />
+    </div>
 
 export default App;
